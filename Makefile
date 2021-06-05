@@ -27,7 +27,7 @@ install: build/copyright build/changelog.Debian.gz build/gpgmail.1.gz build/gpgm
 
 	$(Q)install -m 0755 gpgmail ${BIN_DIR}/gpgmail
 	$(Q)install -m 0755 gpgmail-postfix ${BIN_DIR}/gpgmail-postfix
-	$(Q)install -Dm 0644 build/changelog.gz "${DOC_DIR}"/gpgmail/changelog.gz
+	$(Q)install -Dm 0644 build/changelog.Debian.gz "${DOC_DIR}"/gpgmail/changelog.Debian.gz
 	$(Q)install -Dm 0644 build/copyright "${DOC_DIR}"/gpgmail/copyright
 	$(Q)install -Dm 0644 build/gpgmail.1.gz "${MAN_DIR}"/man1/gpgmail.1.gz
 	$(Q)install -Dm 0644 build/gpgmail-postfix.1.gz "${MAN_DIR}"/man1/gpgmail-postfix.1.gz
